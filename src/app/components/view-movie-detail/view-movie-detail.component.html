@@ -1,0 +1,70 @@
+<div *ngFor="let variableName of movieList">
+  <h1>{{ variableName }}</h1>
+</div>
+<div *ngFor="let movieList of movieListArray">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <h3>MOVIE</h3>
+        {{ movieList.movieName }}
+        <img
+          src="{{ movieList.posterUrl }}"
+          alt=""
+          height="100%"
+          width="100%"
+        />
+      </div>
+      <div class="col-sm">
+        <li>
+          <h6>Directed by</h6>
+          {{ movieList.director }}
+        </li>
+        <li>
+          <h6>Cast by</h6>
+          {{ movieList.actor }}
+        </li>
+        <li>
+          <h6>Story</h6>
+          {{ movieList.story }}
+        </li>
+        <li>
+          <h6>View Trailer</h6>
+          {{ movieList.trailer }}
+        </li>
+      </div>
+      <div class="col-sm">
+        <label for="startDate">Choose Date</label>
+        <input id="startDate" class="form-control" type="date" />
+        <p>SHOW TIMING:</p>
+        <button type="button" class="btn btn-danger" (click)="buyTicket('8AM')">
+          8AM
+        </button>
+        <button
+          type="button"
+          class="btn btn-danger"
+          (click)="buyTicket('10.30AM')"
+        >
+          10.30AM
+        </button>
+        <button type="button" class="btn btn-danger" (click)="buyTicket('1PM')">
+          1 PM
+        </button>
+        <button
+          type="button"
+          class="btn btn-danger"
+          (click)="buyTicket('5.30PM')"
+        >
+          5.30PM
+        </button>
+        <button
+          type="button"
+          class="btn btn-danger"
+          (click)="buyTicket('10.30PM')"
+        >
+          10.30PM
+        </button>
+        <br />
+      </div>
+    </div>
+  </div>
+</div>

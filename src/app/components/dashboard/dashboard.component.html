@@ -1,0 +1,41 @@
+<!-- <div *ngFor="let variableName of movieList">
+  <h1>{{ variableName }}</h1>
+</div>
+
+<div *ngFor="let movieList of movieListArray">
+  <img
+    src="{{ movieList.posterUrl }}"
+    alt="poster images"
+    height="300px"
+    width="300px"
+  />
+  <li>{{ movieList.movieName }}</li>
+  <li>{{ movieList.director }}</li>
+  <li>{{ movieList.actor }}</li>
+</div> -->
+
+<div class="container">
+  <h3>Recommended Movies</h3>
+  <br />
+  <div class="row">
+    <div class="col-md-3 mb-3" *ngFor="let movieList of movieListArray">
+      <div class="card h-100" style="width: 100%">
+        <img
+          class="card-img-top"
+          [src]="movieList.posterUrl"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h3 class="card-text">{{ movieList.movieName }}</h3>
+          Film By
+          <p>{{ movieList.director }}</p>
+          Cast
+          <p>{{ movieList.actor }}</p>
+        </div>
+        <button class="btn btn-danger" (click)="goToVieMovie(movieList.id)">
+          Book Now
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

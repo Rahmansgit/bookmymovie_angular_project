@@ -1,0 +1,51 @@
+.form-group {
+  margin-top: 7%;
+}
+
+.form-group input {
+  background-color: transparent;
+  margin-left: 50%;
+  font-size: 10px;
+}
+
+.form-group .form-check-label {
+  font-size: 10px;
+}
+
+.form-group .form-control {
+  width: 20%;
+  background-color: none;
+}
+
+.form-group label {
+  margin-left: 50%;
+  font-size: 12px;
+}
+
+button {
+  color: rgb(255, 255, 255);
+  background-color: rgb(29, 11, 163);
+  padding: 0 8px 4px 8px;
+  font-size: 15px;
+  border-radius: 3px;
+  margin-left: 66.5%;
+  border: none;
+}
+
+#emailHelp {
+  margin-left: 50%;
+  font-size: 8px;
+}
+
+.logo {
+  display: flex;
+  margin-left: 50%;
+  margin-bottom: 2rem;
+}
+
+#form-2 {
+  margin-top: 1%;
+}
+#last-child {
+  margin-top: 1%;
+}

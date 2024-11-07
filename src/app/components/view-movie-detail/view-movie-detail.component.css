@@ -1,0 +1,20 @@
+* {
+  margin-top: 3%;
+}
+
+div {
+  text-align: left;
+}
+
+p {
+  margin-top: 1rem;
+}
+
+button {
+  margin-right: 20px;
+}
+
+li {
+  list-style-type: none;
+  margin-bottom: 1rem;
+}
